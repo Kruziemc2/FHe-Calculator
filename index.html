@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerShield Field Theory 計算器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HerShield Field Theory 計算器</h1>
+        <form id="calculationForm">
+            <label for="chargeDensity">輸入電荷密度 ρ (C/m³):</label>
+            <input type="number" id="chargeDensity" name="chargeDensity" required>
+            
+            <label for="plasmaEnergyDensity">輸入等離子體能量密度 E<sub>plasma</sub> (J/m³):</label>
+            <input type="number" id="plasmaEnergyDensity" name="plasmaEnergyDensity" required>
+            
+            <label for="solarMagneticField">輸入太陽磁場強度 B<sub>solar</sub> (T):</label>
+            <input type="number" id="solarMagneticField" name="solarMagneticField" required>
+            
+            <label for="alpha">輸入耦合係數 α:</label>
+            <input type="number" id="alpha" name="alpha" required>
+            
+            <label for="beta">輸入耦合係數 β:</label>
+            <input type="number" id="beta" name="beta" required>
+            
+            <button type="button" onclick="calculateHerShieldField()">計算 HerShield Field (FHe)</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
